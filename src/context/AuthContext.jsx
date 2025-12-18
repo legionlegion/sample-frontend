@@ -3,7 +3,7 @@ import api from "../api/axios";
 
 const AuthContext = createContext();
 
-// Export the hook separately to fix react-refresh/only-export-components
+// eslint-disable-next-line react-refresh/only-export-components
 export const useAuth = () => useContext(AuthContext);
 
 export function AuthProvider({ children }) {
