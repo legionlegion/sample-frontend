@@ -14,7 +14,7 @@ const Login = () => {
     try {
       await login(email, password);
       navigate('/dashboard');
-    } catch (err) {
+    } catch {
       setError('Failed to login. Check credentials!');
     }
   };
